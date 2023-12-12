@@ -1,0 +1,103 @@
+fieldset {
+    border: 0;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: table;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+body{
+    background-image: url('../img/nexuss.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-left: 36%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #000;
+    border-radius: 5px;
+}
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: white;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+}
+
+fieldset.grupo .campo2 {
+    margin-right: 15px;
+}
+
+.campo input[type="text"], .campo input[type="number"],.campo input[type="email"], .campo input[type="date"],.campo input[type="password"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+#estado{
+    width: 202px;
+}
+#rua{
+    width: 414px;
+}
+.botao {
+    font-size: 1.2em;
+    background: #000;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    margin: 0 auto; 
+    display: block;
+}
+
+.botao:hover {
+    background: #fff;
+    color: black;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}

@@ -1,0 +1,107 @@
+
+body {
+         font-family: 'Arial', sans-serif;
+         background-color: #f4f4f4;
+         margin: 0;
+         padding: 0;
+     }
+
+     header {
+         background-color: #3638d6;
+         color: white;
+         text-align: center;
+         padding: 1em;
+     }
+
+     .container {
+         display: flex;
+         justify-content: space-between;
+         max-width: 1200px;
+         margin: 20px auto;
+     }
+
+     #produtos,
+     #carrinho {
+         flex: 1;
+         background-color: white;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         padding: 20px;
+         border-radius: 8px;
+     }
+
+     #produtos ul,
+     #carrinho ul {
+         list-style: none;
+         padding: 0;
+     }
+
+     #produtos li,
+     #carrinho li {
+         border-bottom: 1px solid #eee;
+         padding: 10px;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     #produtos button,
+     #carrinho button {
+         background-color: #4caf50;
+         color: white;
+         border: none;
+         padding: 8px 12px;
+         border-radius: 4px;
+         cursor: pointer;
+     }
+
+     #carrinho {
+         margin-left: 20px;
+     }
+
+     #carrinho p {
+         font-size: 1.2em;
+         font-weight: bold;
+         margin-top: 20px;
+     }
+
+     #total {
+         color: #e44d26;
+     }
+
+     footer {
+         background-color: #3638d6;
+         color: white;
+         text-align: center;
+         padding: 1em;
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+     }
+
+     .botoes {
+         display: flex;
+         justify-content: space-between;
+         margin-top: 20px;
+     }
+
+     .botoes button {
+         margin-right: 10px;
+     }
+
+
+     .cupom-container {
+         margin-top: 10px;
+         display: flex;
+         align-items: baseline;
+     }
+
+     .cupom-container label {
+         margin-right: 10px;
+     }
+
+     .cupom-container input {
+         margin-right: 10px;
+     }
+
+     .botoes button {
+         margin-right: 10px;
+     }

@@ -1,0 +1,433 @@
+body{
+    background-color:#d1cfcf; /*#d1cfcf; /*#b6b2b2  #97bdca*/
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /*--------------------Estilos da barra superior----------------------*/
+  .top-bar {
+    background-color: #3498db;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: flex;
+  }
+  
+  .logo-button {
+    border-left: 2px solid#0f6ba8; 
+    background-color: transparent; 
+    cursor: pointer; 
+    padding: 0; 
+    position: relative; 
+    width: 150px; 
+    height: 70px; 
+    left: 325px; 
+  }
+    
+  .logo-button img {
+    width: auto; /* Defina a largura da imagem */
+    height: 70px; /* Mantém a proporção da altura */
+  }
+  
+  .Logo {
+    position: relative; /* Mantém a posição relativa para a imagem */
+    z-index: 0; /* Define a ordem de empilhamento */
+  }
+  
+  .logo-button:focus {
+    outline: none; /* Remove a borda de foco ao clicar no botão */
+  }
+  
+  
+  .logo-space {
+    margin-left: 11px;
+  }
+  
+  .search-bar {
+    background-color: #3498db;
+    align-items: center; 
+    margin: 0 auto; 
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-box {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 16px;
+    outline: none;
+    padding-left: 10px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 230px; /*ícone à esquerda */
+    top: 50%; /* centralizado verticalmente */
+    transform: translateY(-50%);
+    color: #555; /* Cor do ícone*/
+  }
+  
+  
+  .navigation-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-button {
+    position: absolute;
+    right: 260px; /* ou outro valor para a posição desejada */
+    height: 35px;
+    font-size: 30px;
+    top: 5px;
+    background-color: #00000000;
+    z-index: 3;
+  }
+  .menuLogin {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3498db; 
+    border-right: 2px solid#0f6ba8; 
+    position: relative;
+    right: 320px;
+    width: 120px;
+    height:70px;
+    z-index: 2;
+  }
+  
+  .menuLogin ul {
+    position: relative; /* Adicione essa linha para posicionar corretamente os submenus */
+  
+  }
+  
+  .menuLogin ul li {
+    display: inline-block;
+  }
+  
+  .menuLogin ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    width: 100px; /* largura desejada */
+    height: 8px;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    text-align: center;
+  }
+  
+  .menuLogin .submenu {
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    width: 120px; 
+    right: 20px;
+    height: 100px;
+  }
+  
+  .menuLogin .dropdown .submenu {
+    /* Outros estilos para o submenu */
+    top: 50px; /* Define a distância em relação ao item "Departamentos" */
+     /* Define a posição do submenu em relação ao item pai */
+     border-right: 2px solid#0f6ba8;
+  }
+  
+  .menuLogin ul li:hover .submenu {
+    display: block;
+  }
+  
+  .navigation-buttons button {
+    margin-left: 5px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bars{
+  position: absolute;
+  background-color: #00000000;
+  color:white;
+  border: none;
+  height: 70px;
+  font-size: 30px;
+  top: 0;
+  left: 270px;
+  
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .filter-options {
+    margin-bottom: 20px;
+  }
+  
+  .cart-button:focus,
+  .bars:focus {
+  outline: none;
+  }
+  
+  
+  
+  
+  /*--------------------------menu--------------------------------------*/
+  .menu {
+    margin: 0; /* Resetando margens */
+    padding: 0; /* Resetando preenchimentos */
+    z-index: 2;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    top: 0; 
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative; /* Adicione essa linha para posicionar corretamente os submenus */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li:hover {
+    background-color: #555;
+
+}
+
+/* Estilos do Dropdown */
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    padding: 0;
+
+}
+
+.menu .submenu li {
+    display: block;
+    position: relative; /* Adicione essa linha para os itens terem contexto no submenu */
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+.menu .submenu li a {
+    padding: 10px;
+    color: white; /* Defina a cor do texto */
+    text-decoration: none; /* Remova sublinhado dos links */
+}
+
+.menu .submenu-sub {
+    display: none;
+    position: absolute;
+    left: 100%; /* Posiciona o submenu à direita do item pai */
+    top: 0; /* Alinha o submenu no topo do item pai */
+}
+
+.menu .dropdown-sub:hover .submenu-sub {
+    display: block;
+}
+
+.menu .dropdown .submenu {
+    /* Outros estilos para o submenu */
+    top: 100%; /* Define a distância em relação ao item "Departamentos" */
+    left: 0; /* Define a posição do submenu em relação ao item pai */
+    z-index: 2;
+}
+
+#boasVindas {
+  /* Adicione estilos específicos para a mensagem de boas-vindas */
+  /* Por exemplo: */
+  position: relative;
+  width: 150px;
+  height: 50px;
+  top: 0px;
+  right: 90px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+
+
+}
+/*-=-=-=-=----------------------------------------------------------------------------------------*/
+
+.imagem-full-width {
+  width: 100%;
+  height: 200px;
+  margin: 0; /* Resetando margens */
+  padding: 0; /* Resetando preenchimentos */
+}
+/*----------------------------------------------------------------------------------*/
+/* Estilos para os itens de paginação */
+/* Estilos para o contêiner de paginação */
+.paginate {
+  display: flex;
+  align-items: center;
+  
+  /* Adicione outros estilos conforme necessário */
+}
+
+/* Estilos para cada item de paginação */
+.paginate__item {
+  position: relative;
+  margin-left: 50px; /* Espaçamento entre os itens de paginação */
+  
+  /* Adicione outros estilos conforme necessário */
+}
+
+/* Estilos para os links de navegação Anterior e Próximo */
+.paginate__item--prev a,
+.paginate__item--next a {
+  text-decoration: none;
+  color: #333;
+  padding: 0px; /* Ajuste o preenchimento para alterar o tamanho do botão */
+  font-size: 8px; /* Ajuste o tamanho da fonte */
+  /*border: 1px solid #333; /* Adicione uma borda para destacar o botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+
+ 
+  /* Outros estilos */
+}
+
+/* Estilos para os links de navegação ao passar o mouse */
+.paginate__item--prev a:hover,
+.paginate__item--next a:hover {
+  
+  color: #555; /* Cor do texto ao passar o mouse */
+  /* Outros estilos de hover */
+}
+
+/* Estilos para os ícones, se houver */
+.paginate__item .icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1090px;
+  top:100%;
+  
+  
+  /* Estilos para o ícone */
+}
+
+.text2{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 1000px;
+  top: 75%;
+  color: #333;
+}
+
+.text3{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 1100px;
+  top: 75%;
+  color: #333;
+}
+
+.change-page{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1060px;
+  top: 50%;
+  background-color: #d1cfcf;
+  
+}
+/*-------------------------------cards----------------------------------------*/
+
+.products {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 10px; /* Espaço entre os cards */
+}
+
+.products {
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 10px; /* Espaço entre os cards */
+}
+
+.product {
+  width: 150px; /* Largura dos cards */
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0; /* Removendo a margem anterior */
+}
+
+.additional-info {
+  display: none; /* Inicialmente escondido */
+  margin-top: 10px; /* Espaço para separar do texto original */
+}
+
+.read-more {
+  color: blue; /* Cor do link "Ver Mais" (pode ser personalizado) */
+  cursor: pointer; /* Mostrar o cursor como ponteiro ao passar sobre o link */
+  margin-top: 2px; /* Espaçamento superior para separar o texto do botão "Comprar" */
+  
+}
+
+.product-box {
+  width: 150px; /* Ajuste a largura desejada */
+  height: 280px; /* Ajuste a altura desejada */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.product img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin: 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-size: 20px;
+  margin-left: 50%;
+ align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
