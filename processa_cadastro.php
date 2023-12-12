@@ -1,7 +1,7 @@
 <?php
-include 'conexao.php'; // Arquivo com a conexão ao banco de dados
+include 'conexao.php'; // Arquivo com a conexão ao banco
 
-// Verifica se o formulário foi enviado
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebe os dados do formulário e faz a validação 
     $nome = $_POST['nome'];
@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
     $query = "INSERT INTO usuarios (nome, email, cpf, telefone, cidade, estado, numero_casa, rua, bairro, senha) VALUES ('$nome', '$email', '$cpf', '$telefone', '$cidade', '$estado', '$numero_casa', '$bairro', '$rua', '$senha')";
 
-    // Executa a query
+    
     if ($conexao->query($query) === TRUE) {
         echo "Cadastro realizado com sucesso!";
-        header("Location: home.php");// página desejada
+        header("Location: home.php");
         exit(); 
     } else {
         echo "Erro ao cadastrar: " . $conexao->error;

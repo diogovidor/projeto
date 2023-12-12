@@ -19,7 +19,7 @@
             <ul>
                 <li id="produto1">Item 1 - R$ 10.00 <button onclick="adicionarAoCarrinho('Item 1', 10.00)">Adicionar ao Carrinho</button></li>
                 <li id="produto2">Item 2 - R$ 20.00 <button onclick="adicionarAoCarrinho('Item 2', 20.00)">Adicionar ao Carrinho</button></li>
-                <!-- Adicione mais produtos conforme necessário -->
+                
             </ul>
         </div>
 
@@ -78,12 +78,12 @@
             var cupom = cupomInput.value;
 
             if (cupom === "V1N1") {
-                // Aplicar desconto de 10%
+                
                 total *= 0.9;
                 atualizarCarrinho();
                 alert("Desconto aplicado com sucesso!");
             }else if(cupom === "ERICKFR4UD3") {
-                // Aplicar desconto de 10%
+                
                 total *= 10;
                 atualizarCarrinho();
                 alert("Desconto aplicado com sucesso!");
@@ -91,12 +91,12 @@
                 alert("Cupom inválido.");
             }
 
-            // Limpar campo de cupom
+            
             cupomInput.value = "";
         }
 
         function comprar() {
-            // Adicione aqui a lógica de compra, se necessário
+            
             alert("Compra realizada com sucesso!");
             limparCarrinho();
         }

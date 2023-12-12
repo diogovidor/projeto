@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verifica se a sessão com o nome do usuário está definida
 if (isset($_SESSION['nome'])) {
     $nome = $_SESSION['nome'];
 }
@@ -89,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <!-- Imagens empilhadas à esquerda -->
         <div class="stacked-images">
           <img src="img/kit_upgrade.jpg" alt="Primeiro Slide" class="thumbnail" data-target="#carouselExampleControls" data-slide-to="0">
         
@@ -222,7 +220,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
- <!-- Adicione os scripts JavaScript do Bootstrap -->
+
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

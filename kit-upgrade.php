@@ -72,11 +72,11 @@ function toggleInfo(button) {
     if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
         additionalInfo.style.display = 'inline';
         button.textContent = ' Ver Menos';
-        productBox.style.height = '440px'; // Defina o tamanho desejado aqui
+        productBox.style.height = '440px'; 
     } else {
         additionalInfo.style.display = 'none'; 
         button.textContent = ' Ver Mais';
-        productBox.style.height = '280px';
+        productBox.style.height = '280px';//tamanho padrão
     }
 }
 
@@ -218,43 +218,182 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
     </div>
     <h1><strong>Kit Upgrade</strong></h1>
+    
+            <div class="products">
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit_upgrade.jpg"  alt="Produto 1">
+                        <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
+                        <p class="product-price">R$ 999,00 </p>
+                        <button class="other-button comprar-btn" onclick="goToProductPage('produto2.php')">Comprar</button>                
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade2.jpg" alt="Produto 2">
+                        <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
+                            <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
+                        <p class="product-price">R$ 1.409,00</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade3.jpg" alt="Produto 3">
+                        <p class="product-description">Kit Upgrade Intel Core I5 10400F 
+                            <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
+                        <p class="product-price">R$ 1.109,00</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade4.jpg" alt="Produto 4">
+                        <p class="product-description">Kit Upgrade Ryzen 3 4100 
+                            <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
+                        <p class="product-price">R$ 729,00</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade5.jpg" alt="Produto 5">
+                        <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G 
+                            <span class="additional-info" style="display: none;"> + Placa Mãe A520 + 16GB DDR4</span>
+                            <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                        </p>
+                        <p class="product-price">R$ 1589,90</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>                            
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade6.jpg" alt="Produto 6">
+                        <p class="product-description">Kit Upgrade, Intel i3 10100F
+                            <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
+                            <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                        </p>
+                        <p class="product-price">R$ 1009.99</p>
+                        <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
+                    </div>
+                </div>                                
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade7.jpg"  alt="Produto 7">
+                        <p class="product-description">Kit Upgrade, Intel i5 10400F
+                            <span class="additional-info" style="display: none;">  + Placa Mãe H510 </span>
+                            <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                        </p>
+                        <p class="product-price">R$ 1169.99</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>
+                           
+                <div class="product">
+                    <div class="product-box">
+                        <img src="img/kit-upgrade8.jpg"  alt="Produto 8">
+                        <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G, 
+                            <span class="additional-info" style="display: none;"> Biostar B450MH </span>
+                            <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                        </p>
+                        <p class="product-price">R$ 1239.99</p>
+                        <button class="other-button" onclick="goToPayment()">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade6.jpg" alt="Produto 6">
+                    <p class="product-description">Kit Upgrade, Intel i3 10100F
+                        <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
+                        <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1009.99</p>
+                    <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade8.jpg" alt="Produto 8">
+                    <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G, 
+                        <span class="additional-info" style="display: none;"> Biostar B450MH </span>
+                        <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1239.99</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit_upgrade.jpg" alt="Produto 1">
+                    <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
+                    <p class="product-price">R$ 999,00 </p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade2.jpg" alt="Produto 2">
+                    <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
+                        <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1.409,00</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade3.jpg" alt="Produto 3">
+                    <p class="product-description">Kit Upgrade Intel Core I5 10400F 
+                        <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1.109,00</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade5.jpg" alt="Produto 5">
+                    <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G 
+                        <span class="additional-info" style="display: none;"> + Placa Mãe A520 + 16GB DDR4</span>
+                        <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1589,90</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade7.jpg" alt="Produto 7">
+                    <p class="product-description">Kit Upgrade, Intel i5 10400F
+                        <span class="additional-info" style="display: none;">  + Placa Mãe H510 </span>
+                        <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 1169.99</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-box">
+                    <img src="img/kit-upgrade4.jpg" alt="Produto 4">
+                    <p class="product-description">Kit Upgrade Ryzen 3 4100 
+                        <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                    </p>
+                    <p class="product-price">R$ 729,00</p>
+                    <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
+            </div>
+        </div>
+
     <div class="products">
-        <div class="product">
-            <div class="product-box">
-                <img src="img/kit_upgrade.jpg"  alt="Produto 1">
-                <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
-                <p class="product-price">R$ 999,00 </p>
-                <button class="other-button comprar-btn" onclick="goToProductPage('produto2.php')">Comprar</button>
-                
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-box">
-                <img src="img/kit-upgrade2.jpg" alt="Produto 2">
-                <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
-                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
-                <p class="product-price">R$ 1.409,00</p>
-                <button class="other-button" onclick="goToPayment()">Comprar</button>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-box">
-                <img src="img/kit-upgrade3.jpg" alt="Produto 3">
-                <p class="product-description">Kit Upgrade Intel Core I5 10400F 
-                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
-                <p class="product-price">R$ 1.109,00</p>
-                <button class="other-button" onclick="goToPayment()">Comprar</button>
-            </div>
-        </div>
-        <div class="product">
-            <div class="product-box">
-                <img src="img/kit-upgrade4.jpg" alt="Produto 4">
-                <p class="product-description">Kit Upgrade Ryzen 3 4100 
-                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span></p>
-                <p class="product-price">R$ 729,00</p>
-                <button class="other-button" onclick="goToPayment()">Comprar</button>
-            </div>
-        </div>
         <div class="product">
             <div class="product-box">
                 <img src="img/kit-upgrade5.jpg" alt="Produto 5">
@@ -265,21 +404,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="product-price">R$ 1589,90</p>
                 <button class="other-button" onclick="goToPayment()">Comprar</button>
             </div>
-        </div>                            
+        </div>
+
         <div class="product">
             <div class="product-box">
-                <img src="img/kit-upgrade6.jpg" alt="Produto 6">
-                <p class="product-description">Kit Upgrade, Intel i3 10100F
-                    <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
-                    <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                <img src="img/kit-upgrade4.jpg" alt="Produto 4">
+                <p class="product-description">Kit Upgrade Ryzen 3 4100 
+                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
                 </p>
-                <p class="product-price">R$ 1009.99</p>
-                <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
+                <p class="product-price">R$ 729,00</p>
+                <button class="other-button" onclick="goToPayment()">Comprar</button>
             </div>
-        </div>                                
+        </div>
+
         <div class="product">
             <div class="product-box">
-                <img src="img/kit-upgrade7.jpg"  alt="Produto 7">
+                <img src="img/kit-upgrade7.jpg" alt="Produto 7">
                 <p class="product-description">Kit Upgrade, Intel i5 10400F
                     <span class="additional-info" style="display: none;">  + Placa Mãe H510 </span>
                     <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
@@ -288,204 +428,61 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button class="other-button" onclick="goToPayment()">Comprar</button>
             </div>
         </div>
-                           
+
         <div class="product">
             <div class="product-box">
-                <img src="img/kit-upgrade8.jpg"  alt="Produto 8">
+                <img src="img/kit-upgrade6.jpg" alt="Produto 6">
+                <p class="product-description">Kit Upgrade, Intel i3 10100F
+                      <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
+                    <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                </p>
+                <p class="product-price">R$ 1009.99</p>
+                <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-box">
+                <img src="img/kit_upgrade.jpg" alt="Produto 1">
+                <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
+                <p class="product-price">R$ 999,00 </p>
+                <button class="other-button" onclick="goToPayment()">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-box">
+                <img src="img/kit-upgrade3.jpg" alt="Produto 3">
+                <p class="product-description">Kit Upgrade Intel Core I5 10400F 
+                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                </p>
+                <p class="product-price">R$ 1.109,00</p>
+                <button class="other-button" onclick="goToPayment()">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-box">
+                <img src="img/kit-upgrade2.jpg" alt="Produto 2">
+                <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
+                    <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
+                </p>
+                <p class="product-price">R$ 1.409,00</p>
+                <button class="other-button" onclick="goToPayment()">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-box">
+                <img src="img/kit-upgrade8.jpg" alt="Produto 8">
                 <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G, 
                     <span class="additional-info" style="display: none;"> Biostar B450MH </span>
                     <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
                 </p>
                 <p class="product-price">R$ 1239.99</p>
                 <button class="other-button" onclick="goToPayment()">Comprar</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="products">
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade6.jpg" alt="Produto 6">
-            <p class="product-description">Kit Upgrade, Intel i3 10100F
-                <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1009.99</p>
-            <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
-        </div>
-    </div>
-    
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade8.jpg" alt="Produto 8">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G, 
-                <span class="additional-info" style="display: none;"> Biostar B450MH </span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1239.99</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit_upgrade.jpg" alt="Produto 1">
-            <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
-            <p class="product-price">R$ 999,00 </p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade2.jpg" alt="Produto 2">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1.409,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade3.jpg" alt="Produto 3">
-            <p class="product-description">Kit Upgrade Intel Core I5 10400F 
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1.109,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade5.jpg" alt="Produto 5">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G 
-                <span class="additional-info" style="display: none;"> + Placa Mãe A520 + 16GB DDR4</span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1589,90</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade7.jpg" alt="Produto 7">
-            <p class="product-description">Kit Upgrade, Intel i5 10400F
-                <span class="additional-info" style="display: none;">  + Placa Mãe H510 </span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1169.99</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade4.jpg" alt="Produto 4">
-            <p class="product-description">Kit Upgrade Ryzen 3 4100 
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 729,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-</div>
-
-<div class="products">
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade5.jpg" alt="Produto 5">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G 
-                <span class="additional-info" style="display: none;"> + Placa Mãe A520 + 16GB DDR4</span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1589,90</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade4.jpg" alt="Produto 4">
-            <p class="product-description">Kit Upgrade Ryzen 3 4100 
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A320</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 729,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade7.jpg" alt="Produto 7">
-            <p class="product-description">Kit Upgrade, Intel i5 10400F
-                <span class="additional-info" style="display: none;">  + Placa Mãe H510 </span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1169.99</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade6.jpg" alt="Produto 6">
-            <p class="product-description">Kit Upgrade, Intel i3 10100F
-                <span class="additional-info" style="display: none;"> + Placa Mãe H510</span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1009.99</p>
-            <button class="other-button comprar-btn" onclick="goToProductPage('Produto.php')">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit_upgrade.jpg" alt="Produto 1">
-            <p class="product-description">Kit Upgrade Ryzen 5 5500 + Placa Mãe B450</p>
-            <p class="product-price">R$ 999,00 </p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade3.jpg" alt="Produto 3">
-            <p class="product-description">Kit Upgrade Intel Core I5 10400F 
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe Biostar B560MH-E 2.0 B560MH-E 2.0</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1.109,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade2.jpg" alt="Produto 2">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600X  
-                <span class="additional-info" id="card-1" style="display: none;">+ Placa Mãe A520</span><span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1.409,00</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-
-    <div class="product">
-        <div class="product-box">
-            <img src="img/kit-upgrade8.jpg" alt="Produto 8">
-            <p class="product-description">Kit Upgrade, AMD Ryzen 5 5600G, 
-                <span class="additional-info" style="display: none;"> Biostar B450MH </span>
-                <span class="read-more" onclick="toggleInfo(this)"> Ver Mais</span>
-            </p>
-            <p class="product-price">R$ 1239.99</p>
-            <button class="other-button" onclick="goToPayment()">Comprar</button>
-        </div>
-    </div>
-</div>
-
-    
-
-</body>
+    </body>
 </html>

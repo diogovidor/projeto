@@ -19,16 +19,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Conexão com o banco de dados
         $conexao = new mysqli("localhost", "root", "", "nexus");
 
-        // Verifica se houve erro na conexão
         if ($conexao->connect_error) {
             die("Erro na conexão: " . $conexao->connect_error);
         }
 
-        // Prepara a query para inserção de dados
+
         $query = "INSERT INTO tabela_usuarios (nome, email, cpf, telefone, cidade, estado, rua, numero_casa, bairro, senha) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conexao->prepare($query);
 
-        // Bind dos parâmetros e execução da query
+
         $stmt->bind_param("ssissssiss", $nome, $email, $cpf, $telefone, $cidade, $estado, $rua, $ncasa, $bairro, $senha);
         $stmt->execute();
 
@@ -39,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Erro ao cadastrar. Tente novamente.";
         }
 
-        // Fecha a conexão e o statement
+
         $stmt->close();
         $conexao->close();
     } else {

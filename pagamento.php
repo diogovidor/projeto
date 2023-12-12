@@ -28,8 +28,8 @@
 </div>
 
 <script>
-  function selectPayment(paymentMethod) {
-    // Lógica para mostrar ou esconder o container PIX
+  function selectPayment(paymentMethod) { // Lógica para mostrar ou esconder o PIX
+
     var pixContainer = document.getElementById('pixContainer');
 
     if (paymentMethod === 'pix') {
@@ -38,7 +38,7 @@
       pixContainer.style.display = 'none';
     }
 
-    // Aqui você pode adicionar lógica adicional para cada forma de pagamento
+    
   }
 </script>
 

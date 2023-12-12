@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verifica se a sessão com o nome do usuário está definida
 if (isset($_SESSION['nome'])) {
     $nome = $_SESSION['nome'];
 }
@@ -72,11 +71,11 @@ function toggleInfo(button) {
     if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
         additionalInfo.style.display = 'inline';
         button.textContent = ' Ver Menos';
-        productBox.style.height = '440px'; // Defina o tamanho desejado aqui, por exemplo, 300px
+        productBox.style.height = '440px'; 
     } else {
         additionalInfo.style.display = 'none'; 
         button.textContent = ' Ver Mais';
-        productBox.style.height = '280px';
+        productBox.style.height = '280px';//tamanho padrão
     }
 }
 
@@ -158,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li><a href="#">Hard Disk (HD)/SSD</a></li>
                             <li><a href="#">Fontes</a></li>
                             <li><a href="#">Placa de Som</a></li>
-                            <!-- Adicione mais subcategorias aqui -->
+                            
                         </ul>
                     </li>
                     <li class="dropdown-sub" onmouseenter="showSubmenu('submenu-diversos-2')" onmouseleave="hideSubmenu('submenu-diversos-2')">
@@ -173,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <li><a href="#">MousePad</a></li>
                             <li><a href="#">Fone de Ouvido</a></li>
                             <li><a href="#">Joystick e Controle</a></li>
-                            <!-- Adicione mais subcategorias aqui -->
+                            
                         </ul>
                     </li>
                     <li><a href="#">Gabinetes</a></li>
@@ -301,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </div>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------->
+
    <div class="products">
     <div class="product">
         <div class="product-box">

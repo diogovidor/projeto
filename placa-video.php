@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verifica se a sessão com o nome do usuário está definida
 if (isset($_SESSION['nome'])) {
     $nome = $_SESSION['nome'];
 }
@@ -72,11 +71,11 @@ function toggleInfo(button) {
     if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
         additionalInfo.style.display = 'inline';
         button.textContent = ' Ver Menos';
-        productBox.style.height = '440px'; // Defina o tamanho desejado aqui
+        productBox.style.height = '440px';
     } else {
         additionalInfo.style.display = 'none'; 
         button.textContent = ' Ver Mais';
-        productBox.style.height = '280px';
+        productBox.style.height = '280px';//tamanho padrão
     }
 }
 
@@ -328,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button class="other-button" onclick="goToPayment()">Comprar</button>
             </div>
         </div>
-        <!-- Continuar com os outros produtos aqui -->
+        
         <div class="product">
             <div class="product-box">
                 <img src="img/placa-de-video7.jpg"  alt="Produto 8">
@@ -412,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <button class="other-button" onclick="goToPayment()">Comprar</button>
         </div>
     </div>
-    <!-- Adicione aqui os outros cards completos -->
+    
     <div class="product">
         <div class="product-box">
             <img src="img/placa-de-video5.jpg" alt="Produto 6">
@@ -465,9 +464,5 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 </div>
-
-
-    
-
 </body>
 </html>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verifica se a sessão com o nome do usuário está definida
 if (isset($_SESSION['nome'])) {
     $nome = $_SESSION['nome'];
 }
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <!-- Imagens empilhadas à esquerda -->
         <div class="stacked-images">
           <img src="img/placa-de-video.webp" alt="Primeiro Slide" class="thumbnail" data-target="#carouselExampleControls" data-slide-to="0">
           <img src="img/placa.jpg" alt="Segundo Slide" class="thumbnail" data-target="#carouselExampleControls" data-slide-to="1">
